@@ -14,7 +14,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Rufina:400,700" rel="stylesheet">
         
         <!-- title of site -->
-        <title>CarVilla</title>
+        <title>TurboRacer</title>
 
         <!-- For favicon png -->
 		<link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png"/>
@@ -78,7 +78,7 @@
 				                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
 				                    <i class="fa fa-bars"></i>
 				                </button>
-				                <a class="navbar-brand" href="index.html">carvilla<span></span></a>
+				                <a class="navbar-brand" href="index.html">TurboRacer<span></span></a>
 
 				            </div><!--/.navbar-header-->
 				            <!-- End Header Navigation -->
@@ -105,7 +105,7 @@
 
 			<div class="container">
 				<div class="welcome-hero-txt">
-					<h2>Bem-Vindo Lenda </h2>
+					<h2>TurboRacer </h2>
 					<p>
 						O site onde você encontra o carro dos seus sonhos
 					</p>
@@ -1029,3 +1029,12 @@
 		});
 	});
 </script></script>
+<script>
+	document.addEventListener("DOMContentLoaded", function() {
+		const modelSearchContent = document.querySelector(".model-search-content");
+		if (modelSearchContent) {
+			modelSearchContent.remove();
+		}
+	});
+</script>
+<link href="pages/CarrosEmDestaque.html" class="welcome-btn">Ver Carros em Destaque</link>
