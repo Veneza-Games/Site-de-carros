@@ -1037,4 +1037,36 @@
 		}
 	});
 </script>
-<link href="pages/CarrosEmDestaque.html" class="welcome-btn">Ver Carros em Destaque</link>
+<a href="pages/CarrosEmDestaque.html" class="featured-link">Carros em Destaque</a>
+<script>
+	document.addEventListener("DOMContentLoaded", function() {
+		document.querySelectorAll(".featured-cars-txt p").forEach(function(element) {
+			element.remove();
+		});
+	});
+</script>
+<script>
+	document.addEventListener("DOMContentLoaded", function() {
+		document.querySelectorAll(".new-cars-txt p").forEach(function(element) {
+			element.remove();
+		});
+	});
+</script>
+<script>
+	document.addEventListener("DOMContentLoaded", function() {
+		const serviceItems = document.querySelectorAll(".single-service-item");
+		if (serviceItems.length >= 3) {
+			serviceItems[0].remove(); // Remove "maior concessionária de carros"
+			serviceItems[1].remove(); // Remove the one to the right
+			serviceItems[2].remove(); // Remove the one to the left
+		}
+	});
+</script>
+<script>
+	document.addEventListener("DOMContentLoaded", function() {
+		const clientsSaySection = document.querySelector("#clients-say");
+		if (clientsSaySection) {
+			clientsSaySection.remove();
+		}
+	});
+</script>
